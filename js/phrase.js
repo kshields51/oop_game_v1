@@ -7,7 +7,6 @@ class Phrase {
     }
     addPhraseToDisplay () {
         Array.from(this.phrase).forEach(letter => {
-            let ul = document.getElementById('phrase');
             let hiddenLetter = letter;
             let li = document.createElement('li');
             if (hiddenLetter !== ' ') {
@@ -21,7 +20,13 @@ class Phrase {
 
         });
     }
-    checkLetter () {
+    checkLetter (letter) {//dont even think you need the for each thing
+        var chosenLetter = letter;
+        var realMatch = phrase.phrase
+        if (realMatch.includes(chosenLetter)) {
+            console.log('here is a match')
+            return true
+        }
 
     }
     showMatchedLetter () {
