@@ -6,7 +6,7 @@ class Phrase {
 
     }
     addPhraseToDisplay () {
-        Array.from(phrase).forEach(letter => {
+        Array.from(this.phrase).forEach(letter => {
             let ul = document.getElementById('phrase');
             let hiddenLetter = letter;
             let li = document.createElement('li');
